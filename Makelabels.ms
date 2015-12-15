@@ -7,6 +7,7 @@ if dirName != undefined do
 	E = 5 -- Extrude amount
 	H = 50 -- height above grade
 	FH = 100 --Font Height
+	f = openfile (dirName + @"\" + "EPA_stations.dbf") 
 	f = openfile (dirName + @"\" + "pole_loc.csv") 
 	pole = readDelimitedString f ","; pos.x = readvalue f; pos.y = readvalue f; pos.z = readvalue f; rot = readvalue f;
 	format "%\t%\t%\n" pos.x pos.y pos.z
